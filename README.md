@@ -94,7 +94,7 @@ devAssist is a browser‑based IDE inspired by Cursor AI, featuring:
 1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/code-with-antonio/devAssist.git
+   git clone https://github.com/ManaswiBidkar/devAssist.git
    cd devAssist
    ```
 
@@ -262,3 +262,4 @@ Thanks to the sponsors supporting this tutorial:
 * [Orchids](https://orchids.app)
 * [shadcn/ui](https://ui.shadcn.com)
 * [CodeMirror](https://codemirror.net)
+
