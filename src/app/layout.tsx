@@ -3,7 +3,7 @@ import { IBM_Plex_Mono, Inter } from "next/font/google";
 
 import { Toaster } from "@/components/ui/sonner";
 import { Providers } from "@/components/providers";
-
+import { ClerkProvider } from "@clerk/nextjs";
 import "allotment/dist/style.css";
 import "./globals.css";
 
@@ -29,15 +29,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-      <html lang="en" suppressHydrationWarning>
-        <body
-          className={`${inter.variable} ${plexMono.variable} antialiased`}
-        >
+    <html lang="en" suppressHydrationWarning>
+      <body className={`${inter.variable} ${plexMono.variable} antialiased`}>
+        {/* Wrap your app with ClerkProvider */}
+        <ClerkProvider>
           <Providers>
             {children}
             <Toaster />
           </Providers>
-        </body>
-      </html>
+        </ClerkProvider>
+      </body>
+    </html>
   );
 }

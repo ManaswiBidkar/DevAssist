@@ -1,3 +1,5 @@
+
+
 "use client";
 
 import Link from "next/link";
@@ -95,7 +97,7 @@ export const Navbar = ({
                         font.className,
                       )}
                     >
-                      Polaris
+                      devAssist
                     </span>
                   </Link>
                 </Button>
